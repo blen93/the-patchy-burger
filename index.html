@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171614">
+  <meta name="description" content="The Patchy Burger — handcrafted burgers, big flavor, no ordinary burger.">
+  <title>The Patchy Burger | Big Flavor. No Ordinary Burger.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="announcement">GOOD FOOD. GOOD MOOD. <span>✳</span> MADE FRESH, EVERY ORDER.</div>
+  <header class="site-header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="The Patchy Burger home">
+        <span class="brand-mark">P<span>.</span></span>
+        <span class="brand-name">THE PATCHY <b>BURGER</b></span>
+      </a>
+      <button class="icon-button menu-toggle" id="nav-toggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+      <div class="nav-menu" id="nav-menu">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#story">Our Story</a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#contact">Find Us</a>
+        <button class="cart-trigger" id="cart-open" aria-label="Open shopping cart"><i data-lucide="shopping-bag"></i><span>Order</span><b class="cart-count" id="cart-count">0</b></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE BURGER, DONE BETTER</p>
+        <h1>Big flavor.<br><em>No ordinary</em><br>burger.</h1>
+        <p class="hero-copy">Messy in the best way. Made with care, stacked with flavor, and always worth that first bite.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Explore the menu <i data-lucide="arrow-up-right"></i></a>
+          <a class="text-link" href="#story">Our little story <i data-lucide="arrow-down-right"></i></a>
+        </div>
+        <div class="hero-note"><span class="note-star">✳</span><span><strong>Made fresh, never rushed.</strong><small>Good ingredients. Great company.</small></span></div>
+      </div>
+      <div class="hero-visual" aria-label="Burger photograph">
+        <div class="hero-image"></div>
+        <div class="hero-sticker"><span>FRESH</span><b>NOT<br>FROZEN</b><small>✳ ALWAYS</small></div>
+        <div class="hero-image-caption">THE SIGNATURE STACK <span>01 / HOUSE FAVORITE</span></div>
+      </div>
+      <div class="hero-bottom"><span>HANDCRAFTED BURGERS</span><span>GOOD VIBES ONLY</span><span>BUILT FOR BIG APPETITES</span></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Our promise">
+      <div class="container trust-grid">
+        <div><i data-lucide="flame"></i><span><b>Hot off the grill</b><small>Cooked to order</small></span></div>
+        <div><i data-lucide="leaf"></i><span><b>Fresh ingredients</b><small>Flavor in every layer</small></span></div>
+        <div><i data-lucide="heart"></i><span><b>Made with care</b><small>Never just another burger</small></span></div>
+      </div>
+    </section>
+
+    <section class="story section container" id="story">
+      <div class="story-image reveal">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1000&q=85" alt="Fresh cheeseburger and fries" loading="lazy">
+        <div class="image-label">A LITTLE MESS. A LOT OF MAGIC.</div>
+      </div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">A NOTE FROM OUR KITCHEN</p>
+        <h2>Not fancy for<br>the sake of it.<br><em>Just really good.</em></h2>
+        <p>At The Patchy Burger, we believe the best meals are the ones you remember. We bring together satisfying stacks, bold sauces, and fresh toppings for burgers that feel special without taking themselves too seriously.</p>
+        <a class="text-link" href="#menu">Meet your next favorite <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">THE GOOD STUFF</p><h2>Meet the <em>lineup.</em></h2></div>
+          <p>Big cravings deserve a proper answer.<br>Pick your favorite and make it a meal.</p>
+        </div>
+        <div class="menu-filters" role="group" aria-label="Filter menu">
+          <button class="filter-btn active" data-filter="all">All favorites</button>
+          <button class="filter-btn" data-filter="beef">Beef burgers</button>
+          <button class="filter-btn" data-filter="chicken">Chicken</button>
+          <button class="filter-btn" data-filter="sides">Sides &amp; drinks</button>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card reveal" data-category="beef">
+            <div class="product-image"><span class="product-tag">HOUSE FAVORITE</span><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=850&q=85" alt="The Patchy Classic cheeseburger" loading="lazy"></div>
+            <div class="product-info"><div class="product-title-row"><h3>The Patchy Classic</h3><span class="price">₱249</span></div><p>Beef patty, melted cheddar, crisp lettuce, tomato, and signature Patchy sauce.</p><div class="product-bottom"><span class="rating">★★★★★ <small>Fan favorite</small></span><button class="add-button" data-id="classic" aria-label="Add The Patchy Classic to cart"><i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card reveal" data-category="beef">
+            <div class="product-image"><span class="product-tag">BIG CRAVING</span><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=850&q=85" alt="Double beef burger with cheese" loading="lazy"></div>
+            <div class="product-info"><div class="product-title-row"><h3>Double Trouble</h3><span class="price">₱329</span></div><p>Two juicy beef patties, double cheese, grilled onions, and smoky house sauce.</p><div class="product-bottom"><span class="rating">★★★★★ <small>For the hungry</small></span><button class="add-button" data-id="double" aria-label="Add Double Trouble to cart"><i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card reveal" data-category="chicken">
+            <div class="product-image"><span class="product-tag">CRUNCH TIME</span><img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=850&q=85" alt="Crispy chicken burger" loading="lazy"></div>
+            <div class="product-info"><div class="product-title-row"><h3>Crunchy Chick</h3><span class="price">₱229</span></div><p>Crispy chicken, cool slaw, pickles, and creamy pepper sauce in a soft bun.</p><div class="product-bottom"><span class="rating">★★★★★ <small>Crispy comfort</small></span><button class="add-button" data-id="chicken" aria-label="Add Crunchy Chick to cart"><i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card reveal" data-category="beef">
+            <div class="product-image"><span class="product-tag">A LITTLE HEAT</span><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=850&q=85" alt="Spicy gourmet burger" loading="lazy"></div>
+            <div class="product-info"><div class="product-title-row"><h3>Firestarter</h3><span class="price">₱279</span></div><p>Grilled beef, pepper jack, jalapeños, and a spicy sauce with a slow burn.</p><div class="product-bottom"><span class="rating">★★★★★ <small>Heat seeker</small></span><button class="add-button" data-id="fire" aria-label="Add Firestarter to cart"><i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card reveal" data-category="sides">
+            <div class="product-image"><span class="product-tag">CAN'T SKIP THESE</span><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=850&q=85" alt="Golden crispy french fries" loading="lazy"></div>
+            <div class="product-info"><div class="product-title-row"><h3>Golden Fries</h3><span class="price">₱99</span></div><p>Golden, crisp, perfectly salted fries. The sidekick every burger deserves.</p><div class="product-bottom"><span class="rating">★★★★★ <small>Always a yes</small></span><button class="add-button" data-id="fries" aria-label="Add Golden Fries to cart"><i data-lucide="plus"></i></button></div></div>
+          </article>
+          <article class="product-card reveal" data-category="sides">
+            <div class="product-image"><span class="product-tag">COOL IT DOWN</span><img src="https://images.unsplash.com/photo-1513558161293-c1b6e4ab9c9a?auto=format&fit=crop&w=850&q=85" alt="Refreshing citrus drink" loading="lazy"></div>
+            <div class="product-info"><div class="product-title-row"><h3>Citrus Cooler</h3><span class="price">₱79</span></div><p>A bright, refreshing chilled drink to balance all that deliciousness.</p><div class="product-bottom"><span class="rating">★★★★★ <small>Fresh sip</small></span><button class="add-button" data-id="drink" aria-label="Add Citrus Cooler to cart"><i data-lucide="plus"></i></button></div></div>
+          </article>
+        </div>
+        <p class="menu-disclaimer">Sample menu and prices: edit these details to match your actual offerings before launch.</p>
+      </div>
+    </section>
+
+    <section class="quote-band"><div class="container quote-content reveal"><span class="quote-mark">“</span><p>Life's too short<br>for <em>boring burgers.</em></p><span class="quote-side">GOOD FOOD<br>IS A LOVE LANGUAGE.</span></div></section>
+
+    <section class="reviews section container" id="reviews">
+      <div class="section-heading reveal"><div><p class="eyebrow">KIND WORDS, BIG LOVE</p><h2>Good bites.<br><em>Good company.</em></h2></div><p>Nothing beats hearing that a burger made someone's day.</p></div>
+      <div class="review-grid">
+        <article class="review-card reveal"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“The kind of burger you think about again the next day. That sauce is something else.”</p><div class="review-person"><span class="avatar">J</span><span><b>Jamie R.</b><small>Sample review — replace with a real review</small></span></div></article>
+        <article class="review-card review-featured reveal"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Great flavor, generous portions, and the fries are dangerously easy to finish.”</p><div class="review-person"><span class="avatar">M</span><span><b>Mika L.</b><small>Sample review — replace with a real review</small></span></div></article>
+        <article class="review-card reveal"><div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Simple, satisfying, and exactly what I want when a burger craving hits.”</p><div class="review-person"><span class="avatar">A</span><span><b>Alex P.</b><small>Sample review — replace with a real review</small></span></div></article>
+      </div>
+    </section>
+
+    <section class="order-cta" id="contact"><div class="container order-cta-inner reveal"><div><p class="eyebrow">YOUR NEXT GREAT BITE</p><h2>Hungry yet?</h2><p>Your new favorite is only a few clicks away.</p></div><a href="#menu" class="button button-light">Build your order <i data-lucide="arrow-up-right"></i></a></div></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark">P<span>.</span></span><span class="brand-name">THE PATCHY <b>BURGER</b></span></a><p>Big flavor. No ordinary burger.<br>Made for the moments worth sharing.</p></div>
+      <div><h3>Explore</h3><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a></div>
+      <div><h3>Say hello</h3><p>Replace with your real location, hours, and contact details.</p><a href="mailto:hello@yourrestaurant.com">hello@yourrestaurant.com</a></div>
+      <div><h3>Follow along</h3><p>Fresh stacks, behind-the-scenes, and burger love.</p><div class="social-links"><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="TikTok">TT</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> The Patchy Burger. All rights reserved.</span><span class="creator-credit">Website designed &amp; built by <strong>Blenda</strong> <span aria-hidden="true">✳</span></span></div>
+  </footer>
+
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Your shopping cart" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">YOUR ORDER</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="icon-button" id="cart-close" aria-label="Close cart"><i data-lucide="x"></i></button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer"><div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">₱0</strong></div><p class="cart-note">Delivery fees, if any, are confirmed when your order is arranged.</p><button class="button button-primary checkout-button" id="checkout-button">Continue to order <i data-lucide="arrow-up-right"></i></button><p class="checkout-hint" id="checkout-hint">Demo cart — connect your real ordering channel before launch.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
